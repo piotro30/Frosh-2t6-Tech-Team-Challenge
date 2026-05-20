@@ -6,7 +6,7 @@ import scheduleData from './schedule_data.json';
 function App() {
   return (
     <div>
-      <h1>Good Luck, Applicant!</h1>
+      <h1>scheduleData</h1>
       {/*feel free to remove this*/}
     </div>
   );
