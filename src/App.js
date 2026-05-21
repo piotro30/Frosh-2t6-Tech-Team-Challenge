@@ -84,6 +84,12 @@ function App() {
           event["Event Name"]
         )}
         </div>
+        {event["Event Location"] && event["Event Location"].trim() !== "" &&(
+          <h3 className={`event-location ${event.Color}`}>{
+            event["Event Location"]}
+            </h3>
+        )}
+
 
         {event["Event Description"] && event["Event Description"].trim() !== "" &&(
         <div className="tooltip-text">
