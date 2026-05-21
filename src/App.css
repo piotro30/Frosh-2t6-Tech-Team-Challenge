@@ -1,6 +1,133 @@
-/* TODO: Add your styles here */
+.corner-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 200px;  /* adjust size */
+  height: auto;
+  filter: drop-shadow(0 0 17px darkgray)
+
+
+}
+
+
+
+.event-link {
+  color: white;
+  text-decoration: none; /* removes underline */
+}
+
+/* keep it white even after clicking */
+.event-link:visited {
+  color: white;
+}
+
+/* hover effect (optional) */
+.event-link:hover {
+  color: #a020f0;
+  text-decoration: underline;
+}
+
+
+
+.tooltip {
+  position: relative;
+}
+
+/* hidden by default */
+.tooltip-text {
+  display: none;
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  width: 200px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* show on hover */
+.tooltip:hover .tooltip-text {
+  display: block;
+}
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  background: rgb(50, 50, 50);
+  color: white;
+  font-family: Arial;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 3vw;
+  text-shadow: 0 0 10px purple;
+  margin: 20px;
+}
+
+/* Layout: 5 columns */
+.schedule-grid {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+/* Each day column */
+.day-column {
+  flex: 1;
+  background: rgb(70, 70, 70);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.day-title {
+  text-align: center;
+  font-size: 1.2vw;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Event box */
+.event-box {
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  color: black;
+}
+
+/* Event text */
+.event-name {
+  font-weight: bold;
+}
+
+.event-time {
+  font-size: 0.8em;
+}
+
+/* ===== COLORS FROM JSON ===== */
+
+.purple {
+  background: #a020f0;
+  color: white;
+}
+
+.dark-purple {
+  background: #5b2c83;
+  color: white;
+}
+
+.yellow {
+  background: #ffd84d;
+}
+
+.green {
+  background: #4cd964;
+}
+
+.gray {
+  background: #999999;
 }
