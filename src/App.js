@@ -1,7 +1,7 @@
 // Import the schedule data from the JSON file — you can use it like a regular JS array
 import scheduleData from './schedule_data.json';
 import './App.css';
-import uoftlogo from './assets/uoftlogo.png';
+import uoftlogo from './uoftlogo.png';
 
 
 
