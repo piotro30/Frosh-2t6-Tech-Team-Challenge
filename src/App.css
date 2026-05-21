@@ -6,11 +6,7 @@
   width: 200px;  /* adjust size */
   height: auto;
   filter: drop-shadow(0 0 17px darkgray)
-
-
 }
-
-
 
 .event-link {
   color: white;
@@ -89,6 +85,19 @@ body {
   font-size: 1.2vw;
   margin-bottom: 10px;
   color: white;
+}
+
+.event-location {
+  font-size: 1.2em;
+  font-style: italic;
+  margin-top: 5px;
+  color: rgba(255,255,255,0.8);
+}
+
+.event-location.yellow,
+.event-location.green,
+.event-location.gray {
+  color: rgba(0,0,0,0.9);
 }
 
 /* Event box */
